@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom"; // ✅ Correct import
 import useAuthUser from "../hooks/useAuthUser";
 import { BellIcon, HomeIcon, ShipWheelIcon, UsersIcon } from "lucide-react";
 
@@ -70,4 +70,5 @@ const Sidebar = () => {
     </aside>
   );
 };
+
 export default Sidebar;

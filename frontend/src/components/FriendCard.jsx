@@ -1,11 +1,11 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { LANGUAGE_TO_FLAG } from "../constants";
 
 const FriendCard = ({ friend }) => {
   return (
     <div className="card bg-base-200 hover:shadow-md transition-shadow">
       <div className="card-body p-4">
-        {/* USER INFO */}
+        {/* User Info */}
         <div className="flex items-center gap-3 mb-3">
           <div className="avatar size-12">
             <img src={friend.profilePic} alt={friend.fullName} />
@@ -31,6 +31,7 @@ const FriendCard = ({ friend }) => {
     </div>
   );
 };
+
 export default FriendCard;
 
 export function getLanguageFlag(language) {
@@ -48,5 +49,6 @@ export function getLanguageFlag(language) {
       />
     );
   }
+
   return null;
 }
